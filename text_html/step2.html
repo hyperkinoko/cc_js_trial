@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>step2</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style>
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="github-markdown.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="1章のトレーニング">1章のトレーニング</h1>
+<p>1章は変数や演算など、javascriptのとても基本的で大切なことを学んでいます。<br />
+しっかりマスターしておきましょう。</p>
+<h2 id="トレーニング1-1">トレーニング1-1</h2>
+<p>1章の課題<code>1-12</code>は実際に変数を表示してみましたか？<br />
+まだの人はやってみましょう。</p>
+<p>変数の中身を表示するには、<code>document.write()</code>や<code>console.log()</code>、<code>alert()</code>を使えばよかったですね。 今回は、変数の中身をしっかり確認したいので、<code>console.log()</code>を使ってみましょう。</p>
+<h3 id="チェックポイント">チェックポイント</h3>
+<ul>
+<li>Consoleにそれぞれの変数が表示されている。</li>
+<li>表示された内容が、予想と同じであった。</li>
+</ul>
+<h3 id="サンプルコード">サンプルコード</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">&lt;!--・・・HTML部省略--&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">&lt;script&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="kw">var</span> q_1  <span class="op">=</span> <span class="st">&#39;1&#39;</span><span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="va">console</span>.<span class="at">log</span>(q_1)<span class="op">;</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="kw">var</span> q_2  <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="va">console</span>.<span class="at">log</span>(q_2)<span class="op">;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="kw">var</span> q_3  <span class="op">=</span> <span class="st">&#39;true&#39;</span><span class="op">;</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="va">console</span>.<span class="at">log</span>(q_3)<span class="op">;</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="kw">var</span> q_4  <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="va">console</span>.<span class="at">log</span>(q_4)<span class="op">;</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="kw">var</span> q_5  <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="va">console</span>.<span class="at">log</span>(q_5)<span class="op">;</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a></span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="kw">var</span> q_6  <span class="op">=</span> <span class="st">&#39;&#39;</span><span class="op">;</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="va">console</span>.<span class="at">log</span>(q_6)<span class="op">;</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a></span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="kw">var</span> q_7  <span class="op">=</span> <span class="st">&#39;undefined&#39;</span><span class="op">;</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="va">console</span>.<span class="at">log</span>(q_7)<span class="op">;</span></span>
+<span id="cb1-23"><a href="#cb1-23"></a></span>
+<span id="cb1-24"><a href="#cb1-24"></a><span class="kw">var</span> q_8<span class="op">;</span></span>
+<span id="cb1-25"><a href="#cb1-25"></a><span class="va">console</span>.<span class="at">log</span>(q_8)<span class="op">;</span></span>
+<span id="cb1-26"><a href="#cb1-26"></a></span>
+<span id="cb1-27"><a href="#cb1-27"></a><span class="kw">var</span> q_9  <span class="op">=</span> <span class="dv">10</span> <span class="op">+</span> <span class="st">&#39;20&#39;</span><span class="op">;</span></span>
+<span id="cb1-28"><a href="#cb1-28"></a><span class="va">console</span>.<span class="at">log</span>(q_9)<span class="op">;</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a></span>
+<span id="cb1-30"><a href="#cb1-30"></a><span class="kw">var</span> q_10 <span class="op">=</span> <span class="dv">10</span> <span class="op">+</span> <span class="dv">10</span> <span class="op">+</span> <span class="st">&#39;20&#39;</span><span class="op">;</span></span>
+<span id="cb1-31"><a href="#cb1-31"></a><span class="va">console</span>.<span class="at">log</span>(q_10)<span class="op">;</span></span>
+<span id="cb1-32"><a href="#cb1-32"></a><span class="kw">&lt;/script&gt;</span></span></code></pre></div>
+<h2 id="トレーニング1-2">トレーニング1-2</h2>
+<p>上記の出力は、何行目の出力かはわかりますが、どの変数なのかイマイチ見にくいですね。</p>
+<pre><code>q_1: &lt;q_1の中身&gt;
+q_2: &lt;q_2の中身&gt;
+</code></pre>
+<p>のように、どの変数を表示しているか、わかりやすくしてみましょう。</p>
+<p>文字列と、変数の中身をつなげて表示するには、「+」を使います。 トレーニング1-1のコードを少し変えてみましょう。</p>
+<h3 id="チェックポイント-1">チェックポイント</h3>
+<ul>
+<li>Consoleにそれぞれの変数が「q_1: xx」のように表示されている。</li>
+</ul>
+<h3 id="サンプルコード-1">サンプルコード</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1"></a><span class="co">&lt;!--・・・HTML部省略--&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">&lt;script&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">var</span> q_1  <span class="op">=</span> <span class="st">&#39;1&#39;</span><span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;q_1: &#39;</span> <span class="op">+</span> q_1)<span class="op">;</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="kw">var</span> q_2  <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;q_2: &#39;</span> <span class="op">+</span> q_2)<span class="op">;</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="kw">var</span> q_3  <span class="op">=</span> <span class="st">&#39;true&#39;</span><span class="op">;</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;q_3: &#39;</span> <span class="op">+</span> q_3)<span class="op">;</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a></span>
+<span id="cb3-12"><a href="#cb3-12"></a><span class="kw">var</span> q_4  <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;q_4: &#39;</span> <span class="op">+</span> q_4)<span class="op">;</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a></span>
+<span id="cb3-15"><a href="#cb3-15"></a><span class="kw">var</span> q_5  <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></span>
+<span id="cb3-16"><a href="#cb3-16"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;q_5: &#39;</span> <span class="op">+</span> q_5)<span class="op">;</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a></span>
+<span id="cb3-18"><a href="#cb3-18"></a><span class="kw">var</span> q_6  <span class="op">=</span> <span class="st">&#39;&#39;</span><span class="op">;</span></span>
+<span id="cb3-19"><a href="#cb3-19"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;q_6: &#39;</span> <span class="op">+</span> q_6)<span class="op">;</span></span>
+<span id="cb3-20"><a href="#cb3-20"></a></span>
+<span id="cb3-21"><a href="#cb3-21"></a><span class="kw">var</span> q_7  <span class="op">=</span> <span class="st">&#39;undefined&#39;</span><span class="op">;</span></span>
+<span id="cb3-22"><a href="#cb3-22"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;q_7: &#39;</span> <span class="op">+</span> q_7)<span class="op">;</span></span>
+<span id="cb3-23"><a href="#cb3-23"></a></span>
+<span id="cb3-24"><a href="#cb3-24"></a><span class="kw">var</span> q_8<span class="op">;</span></span>
+<span id="cb3-25"><a href="#cb3-25"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;q_8: &#39;</span> <span class="op">+</span> q_8)<span class="op">;</span></span>
+<span id="cb3-26"><a href="#cb3-26"></a></span>
+<span id="cb3-27"><a href="#cb3-27"></a><span class="kw">var</span> q_9  <span class="op">=</span> <span class="dv">10</span> <span class="op">+</span> <span class="st">&#39;20&#39;</span><span class="op">;</span></span>
+<span id="cb3-28"><a href="#cb3-28"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;q_9: &#39;</span> <span class="op">+</span> q_9)<span class="op">;</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a></span>
+<span id="cb3-30"><a href="#cb3-30"></a><span class="kw">var</span> q_10 <span class="op">=</span> <span class="dv">10</span> <span class="op">+</span> <span class="dv">10</span> <span class="op">+</span> <span class="st">&#39;20&#39;</span><span class="op">;</span></span>
+<span id="cb3-31"><a href="#cb3-31"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;q_10: &#39;</span> <span class="op">+</span> q_10)<span class="op">;</span></span>
+<span id="cb3-32"><a href="#cb3-32"></a><span class="kw">&lt;/script&gt;</span></span></code></pre></div>
+<h2 id="トレーニング2">トレーニング2</h2>
+<p>変数に文字列を代入して、それを表示してみましょう。</p>
+<ol>
+<li>nameという変数を作って、あなたの名前を代入しましょう。</li>
+<li>表示には<code>document.write()</code>を使い、画面に<code>&lt;p&gt;</code>要素として表示しましょう。</li>
+<li>「こんにちは、わたしは○○です」のように、あなたの名前がメッセージの中に組み込まれるようにしましょう。</li>
+</ol>
+<h3 id="チェックポイント-2">チェックポイント</h3>
+<ul>
+<li>「こんにちは、わたしは&lt;あなたの名前&gt;です」と表示されている。</li>
+<li>Elementsを確認すると、表示内容が<code>&lt;p&gt;〜&lt;/p&gt;</code>で囲まれている。</li>
+</ul>
+<h3 id="サンプルコード-2">サンプルコード</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">var</span> name <span class="op">=</span> <span class="st">&#39;松本&#39;</span><span class="op">;</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="va">document</span>.<span class="at">write</span>(<span class="st">&#39;&lt;p&gt;こんにちは、わたしは&#39;</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">&#39;です&#39;</span>)<span class="op">;</span></span></code></pre></div>
+<h2 id="課題1-131-14の補足">課題1-13、1-14の補足</h2>
+<p>まずは課題の1-13、1-14をやってみてください。 この2つの課題は、どちらも数字を演算した結果を表示しますね。 <code>document.write()</code>を使って、<code>&lt;p&gt;</code>要素として表示することにも注意してください。</p>
+<p>演算の結果は、</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">var</span> apple <span class="op">=</span> <span class="dv">100</span><span class="op">;</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="kw">var</span> grape <span class="op">=</span> <span class="dv">150</span><span class="op">;</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="kw">var</span> goukei <span class="op">=</span> apple <span class="op">+</span> grape<span class="op">;</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="va">document</span>.<span class="at">write</span>(<span class="st">&#39;&lt;p&gt;合計： &#39;</span> <span class="op">+</span> goukei <span class="op">+</span> <span class="st">&#39;円&lt;/p&gt;&#39;</span>)<span class="op">;</span></span></code></pre></div>
+<p>のように、一旦変数に置き換えてもOKです。</p>
+<p>変数を増やさずに、直接表示することもできますが、</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">var</span> apple <span class="op">=</span> <span class="dv">100</span><span class="op">;</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="kw">var</span> grape <span class="op">=</span> <span class="dv">150</span><span class="op">;</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="va">document</span>.<span class="at">write</span>(<span class="st">&#39;&lt;p&gt;合計： &#39;</span> <span class="op">+</span> apple <span class="op">+</span> grape <span class="op">+</span> <span class="st">&#39;円&lt;/p&gt;&#39;</span>)<span class="op">;</span></span></code></pre></div>
+<p>この結果は、思ったような結果にはなりません。<br />
+なぜか考えて、解決法を考えてみてくださいね。</p>
+<p>わかった人は、答え合わせをしてみましょう。</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">var</span> apple <span class="op">=</span> <span class="dv">100</span><span class="op">;</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="kw">var</span> grape <span class="op">=</span> <span class="dv">150</span><span class="op">;</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a></span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="va">document</span>.<span class="at">write</span>(<span class="st">&#39;&lt;p&gt;合計： &#39;</span> <span class="op">+</span> (apple <span class="op">+</span> grape) <span class="op">+</span> <span class="st">&#39;円&lt;/p&gt;&#39;</span>)<span class="op">;</span></span></code></pre></div>
+<p>プログラムは前から順番に処理されるため、文字列とappleの中身（100）の「+」が先に処理され、「&lt;p&gt;合計: 100」という文字列が作られます。<br />
+そのあとにgrapeの中身（150）が「+」されるので、これは文字列の連結として扱われます。</p>
+<p>これを防ぐため、「apple + grape」の足し算（数字の四則演算）を先にしてくださいねという意味の<code>()</code>をつけてあげます。</p>
+<p>課題1-14の四則演算も、<code>()</code>を上手に使って、処理の優先順を調整しましょう。</p>
+<h2 id="トレーニング3">トレーニング3</h2>
+<p>インクリメント演算子や代入演算子の省略形を使ってみましょう。</p>
+<ol>
+<li>りんご1個の値段は130円です。（変数名: apple）</li>
+<li>個数（変数名: kosuu）の初期値は1に、合計（変数名: goukei）の初期値は0にします。</li>
+<li>1ずつ増やすのにはインクリメント演算子「++」を使ってみましょう。</li>
+<li>合計にりんご1個分の値段を追加するときには、省略形の代入演算子「+=」を使ってみましょう。</li>
+<li>1個ずつ増やしながら、5個まで、その個数と合計金額を表示してみましょう。 数行の処理を5回繰り返します。コピペでOKです。</li>
+<li>処理の順番に気をつけましょう。</li>
+</ol>
+<p>表示結果：</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">&lt;body&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a>    <span class="kw">&lt;p&gt;</span>りんご1個： 130円<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a>    <span class="kw">&lt;p&gt;</span>りんご2個： 260円<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a>    <span class="kw">&lt;p&gt;</span>りんご3個： 390円<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a>    <span class="kw">&lt;p&gt;</span>りんご4個： 520円<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a>    <span class="kw">&lt;p&gt;</span>りんご5個： 650円<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb8-7"><a href="#cb8-7"></a><span class="kw">&lt;/body&gt;</span></span></code></pre></div>
+<h3 id="チェックポイント-3">チェックポイント</h3>
+<ul>
+<li>結果が上記と同じになっている。</li>
+<li>同じコードを使い回せている（for文の予習になります）</li>
+<li>Elementsを確認すると、表示内容が<code>&lt;p&gt;〜&lt;/p&gt;</code>で囲まれている。</li>
+</ul>
+<h3 id="サンプルコード-3">サンプルコード</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">var</span> apple <span class="op">=</span> <span class="dv">130</span><span class="op">;</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="kw">var</span> kosuu <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="kw">var</span> goukei <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a></span>
+<span id="cb9-5"><a href="#cb9-5"></a>goukei <span class="op">+=</span> apple<span class="op">;</span></span>
+<span id="cb9-6"><a href="#cb9-6"></a><span class="va">document</span>.<span class="at">write</span>(<span class="st">&#39;&lt;p&gt;りんご&#39;</span> <span class="op">+</span> kosuu <span class="op">+</span> <span class="st">&#39;個： &#39;</span> <span class="op">+</span> goukei <span class="op">+</span> <span class="st">&#39;円&lt;/p&gt;&#39;</span>)<span class="op">;</span></span>
+<span id="cb9-7"><a href="#cb9-7"></a>kosuu<span class="op">++;</span></span>
+<span id="cb9-8"><a href="#cb9-8"></a></span>
+<span id="cb9-9"><a href="#cb9-9"></a>goukei <span class="op">+=</span> apple<span class="op">;</span></span>
+<span id="cb9-10"><a href="#cb9-10"></a><span class="va">document</span>.<span class="at">write</span>(<span class="st">&#39;&lt;p&gt;りんご&#39;</span> <span class="op">+</span> kosuu <span class="op">+</span> <span class="st">&#39;個： &#39;</span> <span class="op">+</span> goukei <span class="op">+</span> <span class="st">&#39;円&lt;/p&gt;&#39;</span>)<span class="op">;</span></span>
+<span id="cb9-11"><a href="#cb9-11"></a>kosuu<span class="op">++;</span></span>
+<span id="cb9-12"><a href="#cb9-12"></a></span>
+<span id="cb9-13"><a href="#cb9-13"></a>goukei <span class="op">+=</span> apple<span class="op">;</span></span>
+<span id="cb9-14"><a href="#cb9-14"></a><span class="va">document</span>.<span class="at">write</span>(<span class="st">&#39;&lt;p&gt;りんご&#39;</span> <span class="op">+</span> kosuu <span class="op">+</span> <span class="st">&#39;個： &#39;</span> <span class="op">+</span> goukei <span class="op">+</span> <span class="st">&#39;円&lt;/p&gt;&#39;</span>)<span class="op">;</span></span>
+<span id="cb9-15"><a href="#cb9-15"></a>kosuu<span class="op">++;</span></span>
+<span id="cb9-16"><a href="#cb9-16"></a></span>
+<span id="cb9-17"><a href="#cb9-17"></a>goukei <span class="op">+=</span> apple<span class="op">;</span></span>
+<span id="cb9-18"><a href="#cb9-18"></a><span class="va">document</span>.<span class="at">write</span>(<span class="st">&#39;&lt;p&gt;りんご&#39;</span> <span class="op">+</span> kosuu <span class="op">+</span> <span class="st">&#39;個： &#39;</span> <span class="op">+</span> goukei <span class="op">+</span> <span class="st">&#39;円&lt;/p&gt;&#39;</span>)<span class="op">;</span></span>
+<span id="cb9-19"><a href="#cb9-19"></a>kosuu<span class="op">++;</span></span>
+<span id="cb9-20"><a href="#cb9-20"></a></span>
+<span id="cb9-21"><a href="#cb9-21"></a>goukei <span class="op">+=</span> apple<span class="op">;</span></span>
+<span id="cb9-22"><a href="#cb9-22"></a><span class="va">document</span>.<span class="at">write</span>(<span class="st">&#39;&lt;p&gt;りんご&#39;</span> <span class="op">+</span> kosuu <span class="op">+</span> <span class="st">&#39;個： &#39;</span> <span class="op">+</span> goukei <span class="op">+</span> <span class="st">&#39;円&lt;/p&gt;&#39;</span>)<span class="op">;</span></span>
+<span id="cb9-23"><a href="#cb9-23"></a>kosuu<span class="op">++;</span></span></code></pre></div>
+</body>
+</html>
