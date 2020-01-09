@@ -125,7 +125,7 @@ console.log('q_10: ' + q_10);
 
 ```js
 var name = '松本';
-document.write('<p>こんにちは、わたしは' + name + 'です');
+document.write('<p>こんにちは、わたしは' + name + 'です</p>');
 ```
 
 ## 課題1-13、1-14の補足
